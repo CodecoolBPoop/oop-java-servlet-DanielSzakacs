@@ -7,7 +7,7 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.PrintWriter;
 
-@WebServlet(name = "simpleServlet", urlPatterns = {"/"}, loadOnStartup = 1)
+@WebServlet(name = "simpleServlet", urlPatterns = {"/test"}, loadOnStartup = 1)
 public class ServletWithAnnotations extends HttpServlet {
 
     @Override
@@ -16,6 +16,7 @@ public class ServletWithAnnotations extends HttpServlet {
 
         PrintWriter out = response.getWriter();
         String title = "GET method with parameters to display";
+
 
         out.println(
                 "<html>\n" +
